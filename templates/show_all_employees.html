@@ -1,0 +1,27 @@
+<html>
+<body>
+<table style="border: 1px solid black; border-collapse: collapse">
+    <tr>
+        <th style="border: 1px solid black; text-align: center">ID</th>
+        <th style="border: 1px solid black; text-align: center">Name</th>
+        <th style="border: 1px solid black; text-align: center">Position</th>
+        <th style="border: 1px solid black; text-align: center">Department</th>
+    </tr>
+    {% for employee in employees %}
+        <tr>
+            <td style="border: 1px solid black; text-align: center">{{ employee.pk }}</td>
+            <td style="border: 1px solid black; text-align: center">{{ employee.first_name }} {{ employee.last_name }}</td>
+            <td style="border: 1px solid black; text-align: center">{{ employee.position }}</td>
+            <td style="border: 1px solid black; text-align: center">{{ employee.department_name }}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+</body>
+
+
+
+
+
+
+</html>
