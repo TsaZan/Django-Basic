@@ -39,10 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # Application apps
 
-    #Application apps
-
-    'DjangoBasic.departments',  #URLs and Views Lection
+    'DjangoBasic.departments',  # URLs and Views Lection
 ]
 
 MIDDLEWARE = [

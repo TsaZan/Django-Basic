@@ -1,4 +1,3 @@
-from django.contrib import admin
 from django.urls import path
 
 from DjangoBasic.departments.views import department_by_id, department_by_name

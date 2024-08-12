@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from DjangoBasic.departments.views import index, department_by_id, department_by_name, show_departments_and_ids, \
+from DjangoBasic.departments.views import show_departments_and_ids, \
     show_all_employees
 
 urlpatterns = [

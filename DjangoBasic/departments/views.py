@@ -1,4 +1,5 @@
 import time
+
 from django.http import HttpResponse
 from django.shortcuts import render
 
@@ -37,7 +38,6 @@ def show_departments_and_ids(request, employee_id):
 
 
 def show_all_employees(request, name=''):
-
     all_employees = Employees.objects.all().order_by('id').filter(first_name__icontains=name)
     load = {'employees': all_employees}
     return render(request, 'show_all_employees.html', context=load)
