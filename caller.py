@@ -1575,5 +1575,5 @@ employees_data = [
     {"first_name": "Shelagh", "last_name": "Cusack", "position": "Software Engineer I", "department_name": "Legal"},
     {"first_name": "Mord", "last_name": "Geyton", "position": "VP Marketing", "department_name": "Training"}]
 
-for e in employees_data:
-    Employees.objects.create(**e)
+# for e in employees_data:
+#     Employees.objects.create(**e)

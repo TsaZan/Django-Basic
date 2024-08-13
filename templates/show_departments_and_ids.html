@@ -5,7 +5,7 @@
     <title>Title</title>
     <style>
         body {
-            background-color: linen;
+            background-color: whitesmoke;
         }
 
         h1 {
@@ -14,7 +14,7 @@
         }
 
         p {
-            color: mediumvioletred;
+            color: darkred;
             font-size: 18px;
             margin-left: 40px;
             margin-bottom: 10px;
@@ -24,12 +24,13 @@
 
 </head>
 <body>
-<p>Department Name: {{ department_name }}</p>
-<p>Employee Salary: {{ position }}</p>
-<p>Employee First Name: {{ employees_first_name }}</p>
-<p>Employee Last Name: {{ employees_last_name }}</p>
-<p>Logged as {{ logged }}</p>
-<p>Logged as {{ id }}</p>
+<p>Employee ID: <b>{{ id }}</b></p>
+<p>Employee First Name: <b>{{ employees_first_name }}</b></p>
+<p>Employee Last Name: <b>{{ employees_last_name }}</b></p>
+<p>Department Name: <b>{{ department_name }}</b></p>
+<p>Employee Salary: <b>{{ position }}</b></p>
+<p>Logged as <b>{{ logged }}</b></p>
+
 
 </body>
 </html>
