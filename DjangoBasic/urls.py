@@ -18,10 +18,11 @@ from django.contrib import admin
 from django.urls import path, include
 
 from DjangoBasic.departments.views import show_departments_and_ids, \
-    show_all_employees
+    show_all_employees, index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', index),
     path('departments/', include('DjangoBasic.departments.urls')),
     path('<employee_id>', show_departments_and_ids),
     path('employees/', show_all_employees),
